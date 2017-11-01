@@ -19,8 +19,13 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
-
+[image1]: ./writeup_images/histogram.png "Histogram"
+[image2]: ./writeup_images/NormalizeImage.png "Normalization"
+[image3]: ./writeup_images/0-1.jpg
+[image4]: ./writeup_images/11-1.png
+[image5]: ./writeup_images/14-1.jpg
+[image6]: ./writeup_images/2-1.jpg
+[image7]: ./writeup_images/3-1.jpg
 
 ## Rubric Points
 ###Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -57,13 +62,9 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 Using RGB images as input to the network (converting to grayscale will cause loss of important features), RGB images are normalized
 
-RGB image
+RGB image and normalized images
 
 ![alt text][image2]
-
-normalized image
-
-![alt text][image3]
 
 The difference between the original data set and the augmented data set is the following ... 
 
@@ -124,8 +125,8 @@ If a well known architecture was chosen: sermanet
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image3] ![alt text][image4] ![alt text][image5] 
+![alt text][image6] ![alt text][image7]
 
 The first image might be difficult to classify because ...
 
@@ -135,13 +136,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Priority road									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 60 km/h	      		| 60 km/h					 				    |
-| 30 km/h	      		| 30 km/h					 				    |
-| Slippery Road			| Slippery Road      							|
-| Road work  			| Road work         							|
+| 20 km/h       		| 20 knm/h  									| 
+| Right-of way 			| Right-of way									|
+| Stop  				| Stop											|
+| 50 km/h	      		| 30 km/h					 				    |
+| 60 km/h	      		| 50 km/h					 				    |
 
 
-The model was able to correctly guess 24 of the 25 traffic signs, which gives an accuracy of 94%. 
+The model was not able to detect 50 and 60 km/h sign.
